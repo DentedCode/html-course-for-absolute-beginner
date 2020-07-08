@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML input varition and form</title>
+    <style>
+        div{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- creating form -->
+    <!-- method = send form as POST or GET reqest -->
+    <form action="#" method="POST" >
+
+        <!-- input type text -->
+        <div>
+            <label for="name" >Name:</label>
+            <input placeholder="hey write your name" name="userName" type="text" id="name" required>
+        </div>
+         
+        <!-- input type number -->
+        <div>
+            <label>Phone:</label>
+            <input type="number" disabled>
+            <input type="text" name="hiddenTOken" hidden  value="jldkfjg3546">
+        </div>
+         
+        <!-- input type password -->
+        <div>
+            <label>Password:</label>
+            <input type="password">
+        </div>
+         
+        <!-- input type url -->
+        <div>
+            <label>Facebook:</label>
+            <input type="url">
+        </div>
+         
+        <!-- input type date -->
+        <div>
+            <label>DOB:</label>
+            <input type="date">
+        </div>
+        
+        <!-- input type textare -->
+        <div>
+            <label>Detail message:</label>
+            <textarea rows="5" cols="30" ></textarea>
+        </div>
+        
+        <!-- input type radio -->
+        <div>
+            <label>Gender:</label>
+            <input type="radio" name="gander"><label>Male</label>
+            <input type="radio" name="gander"><label>Female</label>
+        </div>
+        
+        
+        <!-- input type file -->
+        <div>
+            <label>Attachement:</label> 
+            <input type="file" accept="image/*" >
+        </div>  
+        
+        <!-- input type email -->
+        <div>
+            <label>email:</label> 
+            <input type="email" >
+        </div>
+        
+        
+        <!-- input type checkbox -->
+        <div>
+            <input type="checkbox" >
+            <label>Accept the terms and condition:</label> 
+        </div>
+        
+        <!-- input type checkbox -->
+        <div>
+            <label>Budge:</label> 
+            <input type="range" min="1" max="100" value="50" >
+        </div>
+        
+        
+        <!-- input type select -->
+        <div>
+            <label>Favourite Subject:</label> 
+            <select name="" id="" multiple>
+                <option value="">-- select --</option>
+                <option value="Maths">Maths</option>
+                <option value="Science">Science</option>
+                <option value="History">History</option>
+            </select>
+        </div>
+        
+        <!-- input type select with optgroup -->
+        <div>
+            <label>Choose a Dish:</label> 
+            <select name="" id="" >
+               <optgroup label="Italian">
+                   <option>Margherita Pizza</option>
+                   <option>Spaghetti</option>
+               </optgroup>
+               <optgroup label="Mexican">
+                   <option>Chicken Tacos</option>
+                   <option>Tomato Salsa</option>
+               </optgroup>
+            </select>
+        </div>
+        
+        
+        <!-- input type select with datalist -->
+       <div>
+        <label for="car">Chose a Car:</label>
+        <input type="text" name="" id="car" list="cars">
+
+        <datalist id="cars">
+            <option value="lamborghini">
+            <option value="Ferrari">
+            <option value="Bugatti">
+        </datalist>
+       </div>
+        
+
+
+        <input type="submit" value="Send">
+    </form>
+    <footer style="min-height: 300px;"></footer>
+
+</body>
+</html>
